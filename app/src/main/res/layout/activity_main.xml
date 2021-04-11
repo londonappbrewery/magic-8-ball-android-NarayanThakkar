@@ -1,13 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
+    android:background="#AAD2F1"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Askbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_weight="1"
+            android:background="#0A1D88"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/CommandButton"
+            android:textColor="#F8F0F0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="426dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="151dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ResultView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AAD2F1"
+            android:contentDescription="@string/CommandButton"
+            app:srcCompat="@drawable/ball1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/LabelLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="155dp">
+
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="401dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginBottom="60dp"
+            android:background="#5F0EF1"
+            android:lineSpacingExtra="10sp"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/headingOfApp"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FDF7F5"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+    </RelativeLayout>
+
+
 </RelativeLayout>
